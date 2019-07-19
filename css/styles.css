@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+*/
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.testimonials-side {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#101820, transparent 90%),
+              linear-gradient(0deg, #101820, transparent 90%),
+              url('https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat center #101820;
+  background-size: cover;
+}
+
+.carousel-indicators li {
+  background-color: #95c93d;
+}
+
+.carousel-item {
+  background: linear-gradient(#101820, transparent 90%),
+              linear-gradient(0deg, #101820, transparent 90%),
+              url('https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat center #101820;
+  background-size: cover;
+}
+
+.testimonials {
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 3.5px 0 0 rgba(15, 177, 80, .5);
+  margin: 45px auto;
+  padding: 50px;
+}
+
+.testimonials h1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: .5rem;
+  text-align: center;
+  color: #FFF;
+}
+
+.customer-testimonials {
+  background: rgb(15, 177, 80);
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  color: #FFF;
+}
+
+.profile-image {
+  width: 100%;
+  border-bottom: 3px solid #0fb150;
+}
+
+h2.testimonial-owner {
+  color:#FFF; 
+  margin: 25px 0 5px;
+  text-shadow: 1px 1px 5px #333;
+  font-size: 2rem;
+}
+
+h6.testimonial-title {
+  color:#e0e0e0;
+  text-shadow: 1px 1px 5px #333;
+}
+
+.title-link {
+  text-decoration: underline;
+  color: rgba(224, 224, 223, .5);
+  font-size: .75rem;
+  text-shadow: 1px 1px 5px #333;
+}
+
+/* =======================================
+MEDIA QUERIES FOR THE TESTIMONIALS SECTION
+========================================== */
+
+  @media (max-width: 769px) {
+    .testimonials {
+      width: 100%;
+      padding: 0;
+    }
+
+    .testimonials h1 {
+      font-size: 4.5rem;
+    }
+  }
+
+blockquote {
+  margin: 0;
+  padding: 30px;
+  background-color: #0fb150;
+  color:#FFF;
+  box-shadow: 0 5px 2px rgba(0,0,0,0.1);
+  position:relative;
+  /* transition: background-color 0.6s linear; */
+  z-index: 999;
+}
+
+blockquote:after { 
+  content: " "; 
+  height: 0; 
+  /* width: 0;  */
+  position: absolute; 
+  top: 100%;
+  left: 30%;
+  border: solid transparent; 
+  border-top-color: #0fb150;
+  border-left-color:#0fb150;
+  border-width: 10px; 
+  z-index: 999;
+}
+
+.quotes {
+  position:absolute;
+  color:rgba(255,255,255,0.5);
+  font-size:5em;
+  font-family: 'Oswald', sans-serif;
+}
+.leftq {
+  top:-25px;
+  left:5px;
+}
+.rightq {
+  bottom:-10px;
+  right:5px;
+}
+
+.form-side img {
+  position: absolute;
+  top: 15%;
+  right: 13%;
+  width: 25%;
+}
